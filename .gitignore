@@ -1,0 +1,53 @@
+# Environnements virtuels et caches Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Datasets bruts, fichiers volumineux et archives
+*.csv
+*.parquet
+*.feather
+*.orc
+*.tsv
+*.xlsx
+*.xls
+*.json.gz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# Exceptions : conserver les artefacts du modele et le scaler
+!*.pt
+!*.pth
+!*.ckpt
+!*.onnx
+!*.safetensors
+!*.pkl
+!*.joblib
+
+# Variables d'environnement et secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Fichiers systeme et editeurs (VS Code, PyCharm, Jupyter)
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.ipynb_checkpoints/
+*.log
